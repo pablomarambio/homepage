@@ -19,15 +19,17 @@
 
 
   %body
+    .title
+      .container
+        .row
+          .col-sm-2
+            %img.img-circle.mugshot{src: "assets/profilepic.jpeg", alt: "Pablo Marambio Cathalifaud"}
+          .col-sm-10
+            .me
+              %h1 Pablo Marambio Cathalifaud
     .container
       .row
-        .col-lg-12
-          = bootstrap_flash
-      .row
         = yield
-      .row
-        .col-lg-4.col-lg-offset-4
-          %p.text-center Pablo Marambio
 
       %footer
         %p &copy; Pablo Marambio Cathalifaud 2014

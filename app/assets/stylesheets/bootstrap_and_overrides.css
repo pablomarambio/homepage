@@ -11,6 +11,26 @@ body {
 	background-repeat: repeat;
 }
 
+.title {
+	background-image: url(subtle-mosaic-pattern2.png);
+	background-repeat: repeat;
+	max-height: calc(14*12px);
+}
+
+.title .mugshot {
+	float:left;
+	width: 120px;
+	margin: auto 10px auto auto;
+}
+
+.title h1 {
+	margin: 25px 0;
+	font-size: 3.8em;
+	font-weight: bolder;
+	color: #e2e2e2;
+	º
+}
+
 @-webkit-keyframes unblur {
     0% { 
     	-webkit-filter: blur(2px);
@@ -58,7 +78,19 @@ body {
 }
 
 @media (max-width: 768px) { 
-	
+
+	.title h1 {
+		margin: 20px 0;
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 412px) { 
+
+	.title h1 {
+		margin: 0;
+		font-size: 2.5em;
+	}
 }
 
 
