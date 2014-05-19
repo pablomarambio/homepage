@@ -23,3 +23,4 @@ gem 'spring',        group: :development
 
 gem 'haml-rails'
 gem "rails_12factor"
+gem "pg"
