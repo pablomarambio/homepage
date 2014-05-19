@@ -7,7 +7,7 @@
     %meta{content: "yes", name: "apple-mobile-web-app-capable"}/
     %meta{content: "Dennis Adelmann, a communication designer based in Mannhem/Germany", name: "description"}/
     %meta{content: "designer, mannheim, mannheim designer, kommunikationsdesign, graphic design, communication design, communication designer", name: "keywords"}/
-    %link{href: "assets/favicon.ico", rel: "shortcut icon"}/
+    %link{href: "favicon.ico", rel: "shortcut icon"}/
     %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700", rel: "stylesheet", type: "text/css"}/
     = stylesheet_link_tag "application", :media => "all"
     /[if lte IE 6]
@@ -27,7 +27,7 @@
     #fademenu
       #weather2
       .logo
-        %img{alt: "logo", src: "assets/mugshot-mini.png"}/
+        = image_tag "mugshot-mini.png", alt: "pablo marambio"
       .navscroll
         %a.current{href: "/"} yo
         %a{href: "http://disclosureallowed.com"} blog
@@ -56,7 +56,7 @@
         %ul.grid.cs-style-1
           %li
             %figure
-              = image_tag "assets/logos/linkedin-normal-1506.png", alt: "Currículum Vitae"
+              = image_tag asset_path("logos/linkedin-normal-1506.png"), alt: "Currículum Vitae"
               %figcaption
                 %h3 Currículum y experiencia
                 —
@@ -64,7 +64,7 @@
                 %a{href: "http://cl.linkedin.com/in/pablomarambio"} echar un vistazo
           %li
             %figure
-              = image_tag "assets/logos/blog-normal-1506.png", alt: "Blog"
+              = image_tag "logos/blog-normal-1506.png", alt: "Blog"
               %figcaption
                 %h3 Disclosure Allowed
                 —
@@ -72,7 +72,7 @@
                 %a{href: "http://disclosureallowed.com"} echar un vistazo
           %li
             %figure
-              = image_tag "assets/logos/twitter-normal-1506.png", alt: "Twitter"
+              = image_tag "logos/twitter-normal-1506.png", alt: "Twitter"
               %figcaption
                 %h3 Mi twitter
                 —
@@ -80,7 +80,7 @@
                 %a{href: "https://twitter.com/pablomarambio"} echar un vistazo
           %li
             %figure
-              = image_tag "assets/logos/opinion-normal-1506.png", alt: "Opiniones ideas"
+              = image_tag "logos/opinion-normal-1506.png", alt: "Opiniones ideas"
               %figcaption
                 %h3 Opiniones & ideas
                 —
@@ -88,7 +88,7 @@
                 %a{href: "http://disclosureallowed.com/category/opinion/"} echar un vistazo
           %li
             %figure
-              = image_tag "assets/logos/so-normal-1506.png", alt: "Stack Overflow"
+              = image_tag asset_path("logos/so-normal-1506.png"), alt: "Stack Overflow"
               %figcaption
                 %h3 Stackoverflow.com
                 —
@@ -96,7 +96,7 @@
                 %a{href: "http://stackoverflow.com/users/18552/pablo-marambio"} echar un vistazo
           %li
             %figure
-              = image_tag "assets/logos/github-normal-1506.png", alt: "Github"
+              = image_tag "logos/github-normal-1506.png", alt: "Github"
               %figcaption
                 %h3 Github
                 —
