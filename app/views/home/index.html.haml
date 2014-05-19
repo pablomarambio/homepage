@@ -1,16 +1,110 @@
-.col-sm-3
-	.item.text-center
-		%h1 Blog
-.col-sm-3
-	.item.text-center
-		.img.img-github
-		%h1 Github
-.col-sm-3
-	.item.text-center
-		.img.img-so
-		%h1 Stack Overflow
-.col-sm-3
-	.item.text-center
-		%h1 CV
+!!!
+%html
+  %head
+    %meta{charset: "UTF-8"}/
+    %title Pablo Marambio Cathalifaud
+    %meta{content: "width=device-width, maximum-scale=1.0; user-scalable=0", name: "viewport"}/
+    %meta{content: "yes", name: "apple-mobile-web-app-capable"}/
+    %meta{content: "Dennis Adelmann, a communication designer based in Mannhem/Germany", name: "description"}/
+    %meta{content: "designer, mannheim, mannheim designer, kommunikationsdesign, graphic design, communication design, communication designer", name: "keywords"}/
+    %link{href: "assets/favicon.ico", rel: "shortcut icon"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700", rel: "stylesheet", type: "text/css"}/
+    = stylesheet_link_tag "application", :media => "all"
+    /[if lte IE 6]
+      <style>#top, #bottom, #left, #right { display: none; }</style>
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-
+      ga('create', '', '');
+      ga('send', 'pageview');
+  %body
+    #preloader
+      #status
+        %p Pablo Marambio Cathalifaud
+    #fademenu
+      #weather2
+      .logo
+        %img{alt: "logo", src: "assets/mugshot-mini.png"}/
+      .navscroll
+        %a.current{href: "/"} yo
+        %a{href: "http://disclosureallowed.com"} blog
+        %a{href: "mailto:yo@pablomarambio.cl"} contacto
+    #left
+    #right
+    #top
+    #bottom
+    %header
+      %nav
+        %a.current{href: "/"} yo
+        %a{href: "http://disclosureallowed.com"} blog
+        %a{href: "mailto:yo@pablomarambio.cl"} contacto
+      #weather
+    #name2
+      .name_inner
+        %h1
+          Pablo Marambio
+          %br>/
+          Ingeniero & Emprendedor
+          %br>/
+          Santiago, Chile
+    .wrapper
+      / wrapper anfang
+      #grid_wrapper
+        %ul.grid.cs-style-1
+          %li
+            %figure
+              %img{alt: "Currículum Vitae", src: "assets/logos/linkedin-normal-1506.png"}/
+              %figcaption
+                %h3 Currículum y experiencia
+                —
+                %span CV en Linkedin
+                %a{href: "http://cl.linkedin.com/in/pablomarambio"} echar un vistazo
+          %li
+            %figure
+              %img{alt: "Blog", src: "assets/logos/blog-normal-1506.png"}/
+              %figcaption
+                %h3 Disclosure Allowed
+                —
+                %span Blog personal
+                %a{href: "http://disclosureallowed.com"} echar un vistazo
+          %li
+            %figure
+              %img{alt: "Twitter", src: "assets/logos/twitter-normal-1506.png"}/
+              %figcaption
+                %h3 Mi twitter
+                —
+                %span Pensamientos en 140 caracteres
+                %a{href: "https://twitter.com/pablomarambio"} echar un vistazo
+          %li
+            %figure
+              %img{alt: "Opiniones ideas", src: "assets/logos/opinion-normal-1506.png"}/
+              %figcaption
+                %h3 Opiniones & ideas
+                —
+                %span Blog personal
+                %a{href: "http://disclosureallowed.com/category/opinion/"} echar un vistazo
+          %li
+            %figure
+              %img{alt: "Stack Overflow", src: "assets/logos/so-normal-1506.png"}/
+              %figcaption
+                %h3 Stackoverflow.com
+                —
+                %span Perfil en Stackoverflow
+                %a{href: "http://stackoverflow.com/users/18552/pablo-marambio"} echar un vistazo
+          %li
+            %figure
+              %img{alt: "Github", src: "assets/logos/github-normal-1506.png"}/
+              %figcaption
+                %h3 Github
+                —
+                %span Perfil en Github
+                %a{href: "https://github.com/pablomarambio"} echar un vistazo
+      / /wrapper ende
+    #copyright_wrapper2
+      %p
+        Copyright © 2014 Pablo Marambio Cathalifaud
+    %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"}
+    = javascript_include_tag "application"
