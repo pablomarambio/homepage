@@ -24,3 +24,4 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem "rails_12factor", group: :production
 gem "pg"
+gem 'newrelic_rpm'
