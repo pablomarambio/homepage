@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -22,6 +23,15 @@ body, html {
   font-size: 100%;
   padding: 0;
   margin: 0; }
+
+
+.onlymobile {
+  display: none;
+}
+
+.notmobile {
+  display: inline;
+}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
@@ -243,7 +253,7 @@ header {
     font-family: sans-serif; }
 
 .name_inner {
-  max-width: 516px;
+  max-width: 600px;
   margin: 0 auto; }
 
 #name2 {
@@ -1502,6 +1512,13 @@ figcaption {
 @media only screen and (max-width: 530px), only screen and (max-device-width: 530px) {
   #fullscreen {
     visibility: hidden; }
+  .onlymobile {
+  	display: inline;
+  }
+
+  .notmobile {
+    display: none;
+  }
 
   .tumblr_photo {
     max-width: 80%; } }
